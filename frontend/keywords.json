@@ -1,0 +1,9 @@
+{
+  "General": ["Leadership","Communication","Agile","Scrum","Jira","REST","APIs","Unit Testing","CI/CD","Git","Docker","Linux","Cloud","SQL","NoSQL","Design Patterns","Problem Solving"],
+  "Frontend Developer": ["HTML","CSS","JavaScript","TypeScript","React","Next.js","Redux","Tailwind","Responsive","Accessibility","Webpack","Vite","Testing Library"],
+  "Backend Developer": ["Node.js","Express","NestJS","Python","Django","Flask","Java","Spring","GraphQL","gRPC","PostgreSQL","MongoDB","Redis","Microservices","Kubernetes"],
+  "Data Analyst": ["Excel","SQL","Python","Pandas","NumPy","Data Cleaning","Data Visualization","Power BI","Tableau","A/B Testing","Statistics","ETL"],
+  "Data Scientist": ["Python","Pandas","NumPy","Scikit-learn","TensorFlow","PyTorch","NLP","Computer Vision","Model Deployment","MLOps","Feature Engineering","XGBoost"],
+  "Cloud Engineer": ["AWS","Azure","GCP","EC2","S3","IAM","VPC","Lambda","Terraform","Ansible","Docker","Kubernetes","Monitoring","CloudWatch"],
+  "Product Manager": ["Roadmap","OKRs","KPIs","User Research","Wireframing","PRD","Backlog","Stakeholders","Market Analysis","Go-to-Market","A/B Testing","Analytics"]
+}

@@ -1,0 +1,25 @@
+:root { --brand:#4f46e5; }
+* { box-sizing: border-box }
+body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; margin:0; }
+.card { background:#fff; border-radius:1rem; box-shadow:0 10px 30px -12px rgba(15,23,42,.15); overflow:hidden }
+.card-header { display:flex; align-items:center; justify-content:space-between; padding:1rem 1.25rem; border-bottom:1px solid #eef2ff }
+.card-header h2 { font-weight:700; color:#111827 }
+
+.nav-item { display:block; width:100%; text-align:left; padding:.75rem .9rem; background:transparent; border:1px solid transparent; border-radius:.75rem; color:#111827 }
+.nav-item:hover { background:#eef2ff; border-color:#e0e7ff }
+.nav-item.active { background:#eef2ff; border-color:#c7d2fe; color:#1f2937; font-weight:600 }
+
+.btn-primary{ background:var(--brand); color:#fff; padding:.6rem .9rem; border-radius:.7rem; font-weight:600; box-shadow:0 10px 20px -12px rgba(79,70,229,.45)}
+.btn-primary:hover{ filter:brightness(.95)}
+.btn-secondary{ background:#f3f4f6; color:#111827; padding:.6rem .9rem; border-radius:.7rem; font-weight:600 }
+.btn-danger{ background:#ef4444; color:#fff; padding:.55rem .85rem; border-radius:.7rem; font-weight:600 }
+
+.toast{ position:fixed; right:24px; bottom:24px; background:var(--brand); color:#fff; padding:.9rem 1.1rem; border-radius:.9rem; box-shadow:0 12px 24px -10px rgba(79,70,229,.5); z-index:50 }
+
+.chip{ display:inline-flex; align-items:center; padding:.35rem .6rem; border-radius:9999px; border:1px solid #e5e7eb; background:#fff; font-size:.85rem; margin:.25rem .35rem .25rem 0 }
+.chip.good{ border-color:#bbf7d0; background:#ecfdf5 }
+.chip.bad{ border-color:#fecaca; background:#fef2f2 }
+.chip-wrap{ display:flex; flex-wrap:wrap }
+
+.section{ animation:fade .35s ease }
+@keyframes fade{ from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none} }

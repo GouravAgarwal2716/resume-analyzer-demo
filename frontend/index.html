@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Optimizer — Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] }}}}
+  </script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-indigo-600 via-indigo-500 to-sky-500 flex items-center justify-center">
+
+  <div class="w-full max-w-md">
+    <div class="bg-white/90 backdrop-blur shadow-2xl rounded-2xl p-8">
+      <!-- Inline SVG Logo (no external asset needed) -->
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <svg width="42" height="42" viewBox="0 0 24 24" class="text-indigo-600">
+          <path fill="currentColor" d="M7 2h7l5 5v13a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/>
+          <circle cx="10" cy="10" r="2.5" fill="#f59e0b"/>
+          <path d="M9 16h6M9 13h8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <h1 class="text-2xl font-bold text-gray-800">Resume Optimizer</h1>
+      </div>
+
+      <p class="text-gray-500 text-center mb-6">Log in to access your dashboard</p>
+
+      <form id="loginForm" class="space-y-4">
+        <input id="email" type="email" placeholder="Email"
+               class="w-full px-4 py-3 rounded-xl border focus:ring-2 focus:ring-indigo-300 outline-none" required>
+        <input id="password" type="password" placeholder="Password"
+               class="w-full px-4 py-3 rounded-xl border focus:ring-2 focus:ring-indigo-300 outline-none" required>
+        <button type="submit"
+                class="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold shadow">
+          Login
+        </button>
+      </form>
+
+      <div class="mt-4 grid grid-cols-2 gap-3">
+        <button id="demoCandidate" class="btn-secondary">Demo: Candidate</button>
+        <button id="demoRecruiter" class="btn-secondary">Demo: Recruiter View</button>
+      </div>
+
+      <p class="text-xs text-center text-white/90 mt-6">
+        Tip: use the Demo buttons to jump straight in for your presentation.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
