@@ -21,3 +21,7 @@ app.use("/api/jobs", jobRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`✅ Backend running on http://localhost:${PORT}`));
+
+app.get("/", (req, res) => {
+  res.send("✅ Resume Analyzer Backend is running successfully!");
+});
