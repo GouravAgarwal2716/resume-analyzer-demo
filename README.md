@@ -18,3 +18,24 @@ An AI-based web application that analyzes resumes, identifies skill gaps, and re
 - Resume Scoring  
 
 ## 📂 Project Structure  
+resume-analyzer/
+│
+├── backend/          # Node.js + Express backend
+│   ├── server.js
+│   ├── routes/
+│   ├── models/
+│   ├── package.json
+│   └── ...
+│
+├── ai_api/           # Python Flask AI resume parser
+│   ├── app.py
+│   ├── requirements.txt
+│   └── ...
+│
+├── frontend/         # HTML, JS, CSS frontend
+│   ├── index.html
+│   ├── script.js
+│   ├── style.css
+│   └── ...
+│
+└── README.md         # Documentation file (we’ll add next)
